@@ -1,65 +1,72 @@
+const PI = Math.PI
 
 //codigo del cuadrado
-function perimetroCuadrado(lado) {
-    return lado * 4;
+function squarePerimeter(side) {
+    const perimeter = side * 4;
+    return perimeter;
 }
 
-function areaCuadrado(lado) {
-    return lado * lado;
+function squareArea(side) {
+    const area = side * side;
+    return area;
 }
 
 
 //codigo del triangulo
-function perimetroTriangulo(lado, lado1, base) {
-    return lado + lado1 + base;
+function trianglePerimeter(sideA, sideB, base) {
+    const perimeter = sideA + sideB + base;
+    return perimeter;
+
 }
 
-function areaTriangulo(base, altura) {
-    return base * altura;
+function triangleArea(base, height) {
+    const area = base * height;
+    return area;
 }
 
     // triangulo isoseles
-function alturaIsosceles(lado, lado2, base) {
-    if(lado == lado2 && lado != base){
-        return Math.sqrt((lado**2) - ((base**2) / 4))
+function isoscelesHeight(sideA, sideB, base) {
+    if(sideB == sideB && sideA != base){
+        return Math.sqrt((sideA**2) - ((base**2) / 4))
     } 
     else {
-        return 'No es un triangulo isosceles'
+        return "Watch out! this isn't an insosceles triangle!"
     }
 }
 
 
 //codigo ciruclo
-const PI = Math.PI
-
-function diametroCirculo(radio) {
-    return radio * 2;
+function circleDiameter(radius) {
+    const diameter = radius * 2;
+    return diameter;
 }
 
-function perimetroCiruclo(radio) {
-    const diametro = diametroCirculo(radio);
-    return diametro * PI;
+function circlePerimeter(radius) {
+    const diameter = circleDiameter(radius);
+    const perimeter = diameter * PI;
+    return perimeter;
 }
 
-function areaCirculo(radio) {
-    return (radio * radio) * PI;
+function circleArea(radius) {
+    const area = (radius * 2) * PI;
+    return area;
 }
 
 
 //Interacción con HTML
-function calcularPerimetroCuadrado() {
+function onClickButtonSquarePerimeter() {
     const input = document.getElementById("inputCuadrado");
-    const lado = input.value;
+    const sideValue = input.value;
 
-    const perimetro = perimetroCuadrado(lado);
-    alert(perimetro);
+    const perimeter = perimetroCuadrado(sideValue);
+    alert(perimeter);
 }
 
-function calcularAreaCuadrado() {
+function onClickButtonSquareArea() {
     const input = document.getElementById("inputCuadrado");
-    const lado = input.value;
+    const sideValue = input.value;
 
-    const area = areaCuadrado(lado);
+    const area = squareArea(sideValue);
     alert(area);
 }
 
