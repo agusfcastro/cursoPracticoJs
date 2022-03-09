@@ -11,7 +11,14 @@
 
 # Taller #2: porcentajes y descuentos
 
--PRIMERO: definir las fórmulas
--SEGUNDO: implementar fórmulas en JavaScript
--TERCERO: crear funciones
--CUARTO: integrar JS con HTML
+- PRIMERO: definir las fórmulas
+- SEGUNDO: implementar fórmulas en JavaScript
+- TERCERO: crear funciones
+- CUARTO: integrar JS con HTML
+
+# Taller #3: promedio, mediana y moda
+
+- PRIMERO: definir las fórmulas
+- SEGUNDO: implementar fórmulas en JavaScript
+- TERCERO: crear funciones
+- CUARTO: integrar JS con HTML
