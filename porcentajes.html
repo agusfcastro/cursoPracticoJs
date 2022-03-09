@@ -18,15 +18,41 @@
             <label>
                 Ingresa el precio de tu producto/servicio:
             </label>
-            <input id="inputPrice" type="number" placeholder="Precio">
-            <input id="inputDiscount" type="number" placeholder="Descuento">
+            <input id="InputPrice" type="number" placeholder="Precio">
+            <input id="InputDiscount" type="number" placeholder="Descuento">
+            <label for="InputCoupons">
+                Cupón de descuento:
+            </label>
+            <input id="InputCoupons" type="text" placeholder="Cupón">
             <button type="button" onclick=onClickButtonPriceDiscount()>
                 Aplicar descuento
             </button>
 
             <p id="resultP"></p>
+
         </form>
     </section>
+
+    <section>
+        <h2>Cupon de descuento</h2>
+        <form>
+            <label>
+                Ingresa el precio de tu producto/servicio y el cupón que deseas aplicar:
+            </label>
+            <input id="InputPrice" type="number" placeholder="Precio">
+            <label for="InputCoupons">
+                Cupón de descuento:
+            </label>
+            <input id="InputCoupon" type="text" placeholder="Cupón">
+            <button type="button" onclick=onClickButtonCoupon()>
+                Aplicar descuento
+            </button>
+
+            <p id="ResultP"></p>
+
+        </form>
+    </section>
+
 
     <script src="./porcentajes.js"></script>
 </body>
